@@ -1,17 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Site</title>
-    <!-- Don't forget to link the CSS file here! -->
-  </head>
-  <body>
-    <h1>Business name 🌻</h1>
+<html lang="en">
 
-    <!-- Video or image as a header is cool :) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Golf</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- Signup form -->
+<body>
+    <section class="hero">
+        <div class="overlay">
+            <div class="content">
+                <p class="welcome">WELCOME TO</p>
+                <h1 class="title">Business Golf</h1>
+                <p class="subtitle">Seriously</p>
+                <a href="#" class="btn">LEARN MORE</a>
+            </div>
+        </div>
+    </section>
 
-  </body>
+
+    <section class="luxury-section">
+        <div class="luxury-container">
+            <div class="luxury-text">
+                <h2>Welcome to your<br>luxurious home<br>away from home</h2>
+                <p>
+                    Come and relax with friends or colleagues in our beautiful surroundings. Our
+                    facilities are designed to provide you with the utmost comfort and style, ensuring that your stay
+                    is nothing short of exceptional.
+                </p>
+            </div>
+            <div class="luxury-image">
+                <img src="./img/pexels-pixabay-274133.jpg" />
+
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form-image">
+                <img src="./img/pexels-pixabay-164250.jpg" />
+            </div>
+            <div class="form-content">
+                <h2>Join our community</h2>
+                <p>Sign up to get exclusive tips and updates directly to your inbox.</p>
+                <form class="signup-form" action="http://httpbin.org/anything" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Choose a password" required>
+                    <p class="checkbox-label">Select your level:</p>
+                    <div class="checkbox-group"> <label><input type="checkbox" name="level" value="Amateur">
+                            Amateur</label>
+                        <label><input type="checkbox" name="level" value="Pro"> Pro</label>
+                        <label><input type="checkbox" name="level" value="1337"> 1337</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
 </html>
